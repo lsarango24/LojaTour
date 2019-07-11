@@ -26,6 +26,9 @@
 	padding: 0px; 
 	box-sizing: border-box;
 }
+/* clases video*/
+
+/* fin clases*/
 .imgFondo {
   background-image:url('../images/puerta_loja.jpg');
 }
@@ -195,7 +198,7 @@ iframe {
 [ Form ]*/
 
 .login100-form {
-  color: #FFC312;
+  color: #a34e82;
   width: 100%;
   border-radius: 10px;
   background-color: rgba(0,0,0,0.5) !important;
@@ -222,7 +225,7 @@ iframe {
 .login100-form-title {
   font-family: Ubuntu-Bold;
   font-size: 28px;
-  color: #FFC312;
+  color: #a34e82;
   line-height: 1.2;
   text-align: center;
   text-transform: uppercase;
@@ -283,10 +286,10 @@ iframe {
   -moz-transition: all 0.4s;
   transition: all 0.4s;
 
-  background: #FFC312;
-  background: -webkit-linear-gradient(left, #FFC312);
-  background: -o-linear-gradient(left, #FFC312);
-  background: -moz-linear-gradient(left, #FFC312);
+  background: #a34e82;
+  background: -webkit-linear-gradient(left, #a34e82);
+  background: -o-linear-gradient(left, #a34e82);
+  background: -moz-linear-gradient(left, #a34e82);
   background: linear-gradient(left, #a445b2, #d41872, #fa4299);
 }
 
@@ -315,7 +318,7 @@ iframe {
 
 .input100:focus + .focus-input100::after {
   left: 23px;
-  color: #d41872;
+  color: #a34e82;
 }
 
 .input100:focus + .focus-input100::before {
@@ -324,7 +327,7 @@ iframe {
 
 .has-val.input100 + .focus-input100::after {
   left: 23px;
-  color: #d41872;
+  color: #a34e82;
 }
 
 .has-val.input100 + .focus-input100::before {
@@ -370,7 +373,7 @@ iframe {
 
  
  
-  background: #FFC312;
+  background: #a34e82;
   position: relative;
   z-index: 1;
 

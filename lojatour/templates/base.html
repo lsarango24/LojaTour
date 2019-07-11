@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load staticfiles %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png"
+        href="https://elysiumists.s3.us-east-2.amazonaws.com/Lojatour/logo+loja+tur.png" />
+    <title>LojaTour|{% block title %}{% endblock %}</title>
+    {% block stylesheets %}
+    <link rel="stylesheet" href="{% static 'assets/web/assets/mobirise-icons/mobirise-icons.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/tether/tether.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-grid.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/bootstrap/css/bootstrap-reboot.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/dropdown/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/animatecss/animate.min.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
+    {% endblock stylesheets %}
+</head>
+
+<body>
+    {% load staticfiles %}
+    <section class="menu cid-reGXlyXMqT" once="menu" id="menu1-j">
+
+
+
+        <nav
+            class="navbar navbar-expand beta-menu navbar-dropdown align-items-center navbar-fixed-top navbar-toggleable-sm">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+            <div class="menu-logo">
+                <div class="navbar-brand">
+                    <span class="navbar-logo">
+                        <a href="{% url 'menu' %}">
+                            <img src="https://elysiumists.s3.us-east-2.amazonaws.com/Lojatour/logo+loja+tur.png" alt="Mobirise" style="height: 4.4rem;">
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
+                    <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="https://mobirise.co">Inicio</a></li>
+                    <li class="nav-item dropdown"><a class="nav-link link text-white dropdown-toggle display-4"
+                            href="https://mobirise.co" data-toggle="dropdown-submenu"
+                            aria-expanded="false">Institución</a>
+                        <div class="dropdown-menu"><a class="text-white dropdown-item display-4"
+                                href="https://mobirise.co">Misión</a><a class="text-white dropdown-item display-4"
+                                href="https://mobirise.co" aria-expanded="false">Visión</a><a
+                                class="text-white dropdown-item display-4" href="https://mobirise.co"
+                                aria-expanded="false">Axiología</a><a class="text-white dropdown-item display-4"
+                                href="https://mobirise.co" aria-expanded="false">Himno</a></div>
+                    </li>
+                    <li class="nav-item"><a class="nav-link link text-white display-4"
+                            href="{% url 'login' %}">Salir</a></li>
+                </ul>
+
+            </div>
+        </nav>
+    </section>
+
+    <section class="engine"><a href="https://mobirise.info/f">easy web builder</a></section>
+    <section class="header6 cid-rvWWbg1e89 mbr-fullscreen"
+        data-bg-video="https://www.youtube.com/watch?v=X5vIW4aHj70&amp;t=8s" id="header6-p">
+
+
+
+        <div class="mbr-overlay" style="opacity: 0.7; background-color: rgb(35, 35, 35);">
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-md-center">
+                <div class="mbr-white col-md-10">
+                    <h1 class="mbr-section-title align-center mbr-bold pb-3 mbr-fonts-style display-1">
+                        INTRO WITH BACKGROUND VIDEO
+                    </h1>
+                    <p class="mbr-text align-center pb-3 mbr-fonts-style display-5">
+                        Intro with background video and color overlay. Mobirise helps you cut down development time by
+                        providing you with a flexible website editor with a drag and drop interface.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+    {% block body %}
+    <main class="main">
+        {% block content %}
+
+        {% endblock content %}
+    </main>
+    {% endblock body %}
+    <section class="cid-rvWY6HIlcn" id="social-buttons3-r">
+    
+    
+
+    
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="col-md-8 align-center">
+                    <h2 class="pb-3 mbr-section-title mbr-fonts-style display-2">
+                        SHARE THIS PAGE!
+                    </h2>
+                    <div>
+                        <div class="mbr-social-likes">
+                            <span class="btn btn-social socicon-bg-facebook facebook mx-2" title="Share link on Facebook">
+                                <i class="socicon socicon-facebook"></i>
+                            </span>
+                            <span class="btn btn-social twitter socicon-bg-twitter mx-2" title="Share link on Twitter">
+                                <i class="socicon socicon-twitter"></i>
+                            </span>
+                            <span class="btn btn-social plusone socicon-bg-googleplus mx-2" title="Share link on Google+">
+                                <i class="socicon socicon-googleplus"></i>
+                            </span>
+                            
+                            
+                            <span class="btn btn-social pinterest socicon-bg-pinterest mx-2" title="Share link on Pinterest">
+                                <i class="socicon socicon-pinterest"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
+                class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
+    <input name="animation" type="hidden">
+
+</body>
+{% block javascripts %}
+<script src="{% static 'assets/web/assets/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'assets/popper/popper.min.js' %}"></script>
+<script src="{% static 'assets/tether/tether.min.js' %}"></script>
+<script src="{% static 'assets/bootstrap/js/bootstrap.min.js' %}"></script>
+<script src="{% static 'assets/smoothscroll/smooth-scroll.js' %}"></script>
+<script src="{% static 'assets/dropdown/js/nav-dropdown.js' %}"></script>
+<script src="{% static 'assets/dropdown/js/navbar-dropdown.js' %}"></script>
+<script src="{% static 'assets/touchswipe/jquery.touch-swipe.min.js' %}"></script>
+<script src="{% static 'assets/ytplayer/jquery.mb.ytplayer.min.js' %}"></script>
+<script src="{% static 'assets/vimeoplayer/jquery.mb.vimeo_player.js' %}"></script>
+<script src="{% static 'assets/mbr-popup-btns/mbr-popup-btns.js' %}"></script>
+<script src="{% static 'assets/sociallikes/social-likes.js' %}"></script>
+<script src="{% static 'assets/viewportchecker/jquery.viewportchecker.js' %}"></script>
+<script src="{% static 'assets/theme/js/script.js' %}"></script>
+{% endblock javascripts %}
+
+</html>

@@ -8,3 +8,6 @@ def login(request):
 def validar_login(request):
     username = request
     password = request
+
+def menu(request):
+    return render(request, 'menu.html')
