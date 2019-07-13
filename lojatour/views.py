@@ -1,13 +1,26 @@
 from django.shortcuts import render
-from .forms import *
-from .models import *
+from django.contrib import messages
+from django.contrib.auth import logout
+from django.contrib.auth.decorators import login_required
 # Create your views here.
-def login(request):
-    return render(request, 'login.html')
+# def login(request):
+#     return render(request, 'login.html')
 
-def validar_login(request):
-    username = request
-    password = request
-
+# def validar_login(request):
+#     usuario= request.POST['username']
+#     password= request.POST['password']
+#     usuarios = Login.objects.filter(usuario = usuario, password = password)
+#     print(usuarios)
+#     if usuarios is None:
+#         print('entroo')
+#         print(usuario)
+#         messages.add_message(request, messages.INFO, 'EL USUARIO NO ESTA REGISTRADO')
+#     else:
+#         return render(request, 'menu.html')
+@login_required
 def menu(request):
     return render(request, 'menu.html')
+
+# def Logout_view(request):
+#     logout(request)
+#     return render(request, 'login.html')

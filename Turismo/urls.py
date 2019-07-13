@@ -16,11 +16,19 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from lojatour import views
+from django.conf import settings
+from django.contrib.auth import views as auth_views
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.login, name='login'),
-    path('login', views.validar_login, name='validar_login'),
-    path('Menú', views.menu, name='menu'),
+    path('',auth_views.LoginView.as_view(template_name='login.html'), name='login'),
+    path('logout',auth_views.LogoutView.as_view(template_name='login.html'), name='logout'),
+    # path('menu', views.validar_login, name='menu'),
+    path('Menú', views.menu, name='Menú'),
+    
     
 ]
+if settings.DEBUG:
+    urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
