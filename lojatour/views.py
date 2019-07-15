@@ -24,3 +24,6 @@ def menu(request):
 # def Logout_view(request):
 #     logout(request)
 #     return render(request, 'login.html')
+@login_required
+def Lojanisima(request):
+    return render(request, 'lojanisima/ruta_lojanisima.html')
