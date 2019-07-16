@@ -27,3 +27,11 @@ def menu(request):
 @login_required
 def Lojanisima(request):
     return render(request, 'lojanisima/ruta_lojanisima.html')
+
+@login_required
+def Identiarte(request):
+    return render(request, 'identiarte/ruta_identiarte.html')
+
+@login_required
+def Raices(request):
+    return render(request, 'raice/ruta_raices.html')

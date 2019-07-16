@@ -29,6 +29,9 @@ urlpatterns = [
     path('Menú', views.menu, name='Menú'),
     #Rutas
     path('Lojanisima', views.Lojanisima, name='lojanisima'),
+    path('Identiarte', views.Identiarte, name='identiarte'),
+    path('Raices', views.Raices, name='raices'),
+
     
     
 ]
