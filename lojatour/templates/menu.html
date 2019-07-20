@@ -3,82 +3,79 @@
 {% block title %} Menú {% endblock title %}
 
 {% block content %}
-<section class="features18 popup-btn-cards cid-rvWXlreHL7" id="features18-q">
-
-    
-
-    
-    <div class="container">
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
-            Historia, Cultura, Arte y Gatronomía... 
-        </h2>
-        <h3 class="mbr-section-subtitle display-5 align-center mbr-fonts-style mbr-light">
-            Escoge, Recorre y Disfruta
-        </h3>
-        <div class="media-container-row pt-5 ">
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper ">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center">
-                            <a href="{% url 'identiarte' %}" class="btn btn-primary display-4">Ver</a>
-                        </div>
-                        <img src="https://elysiumists.s3.us-east-2.amazonaws.com/Lojatour/Identiarte/8941620254_04340f446c_b.jpg" alt="Mobirise">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Identiarte
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style align-left display-7">
-                            Al seguir está ruta conocerás la identidad y arte lojano, con todos nuestros monumentos, plazas e iglesias que te 
-                            presentamos.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center">
-                            <a href="{% url 'lojanisima' %}" class="btn btn-primary display-4">Ver</a>
-                        </div>
-                        <img src="https://elysiumists.s3.us-east-2.amazonaws.com/Lojatour/Lojanisima/descarga.jpeg" alt="Mobirise">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Lojanisima
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                           Al adentrarte a está ruta, conocerás las principales plazas de la ciudad y degustaras la gatronomía lojana.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card p-3 col-12 col-md-6 col-lg-4">
-                <div class="card-wrapper">
-                    <div class="card-img">
-                        <div class="mbr-overlay"></div>
-                        <div class="mbr-section-btn text-center">
-                            <a href="{% url 'raices' %}" class="btn btn-primary display-4">Ver</a>
-                        </div>
-                        <img src="https://elysiumists.s3.us-east-2.amazonaws.com/Lojatour/raices/30081768248_f455ddf57b_b.jpg" alt="Mobirise">
-                    </div>
-                    <div class="card-box">
-                        <h4 class="card-title mbr-fonts-style display-7">
-                            Retomando raíces
-                        </h4>
-                        <p class="mbr-text mbr-fonts-style display-7">
-                            Si de decides seguir está ruta, conocerás las raices y origenes de la cultura lojana.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            
+<link rel="stylesheet" type="text/css" href="{% static 'css/normalize.css' %}" /><!-- CSS: Normalize -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/font-awesome.min.css' %}" /><!-- CSS: Font Awesome -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/YTPlayer.css' %}" /><!-- CSS: YTPlayer CSS -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/styles.css' %}" /><!-- CSS: Main CSS -->
+<link rel="stylesheet" type="text/css" href="{% static 'css/responsive.css' %}" /><!-- CSS: Responsive CSS -->
+<div class="index homepage index-home">
+<div id="container" class="container-fluid intro-effect-grid" style="
+padding-left: 0px;
+padding-right: 0px;
+margin-top: 35px;
+">
+        <article class="content">
+				<div class="">
+					<div class="grid">
+						<figure class="single-item-effect big las-vegas">
+							<img src="{% static 'images/identearte/Identiarte2.jpg' %}" alt="img01"/>
+							<figcaption>
+								<div class="figcaption-border">
+									<h2><span>Identiarte</span></h2>
+									<p>Circuito urbano de costumbres, tradiciones y oficios tradicionales</p>
+									<a href="{% url 'identiarte' %}">View more</a>
+									<div class="figure-overlay"></div>
+								</div>
+							</figcaption>												
+						</figure>
+						<figure class="single-item-effect big las-vegas">
+							<img src="{% static 'images/lojanisima/lojanisima3.jpeg' %}" alt="img01"/>
+							<figcaption>
+								<div class="figcaption-border">
+									<h2><span>Lojanisima</span></h2>
+									<p>Circuito urbano gastronomico, histórico y cultural</p>
+									<a href="{% url 'lojanisima' %}">View more</a>
+									<div class="figure-overlay"></div>
+								</div>
+							</figcaption>												
+						</figure>
+						<figure class="single-item-effect big las-vegas">
+							<img src="{% static 'images/raices/Rescatandoraíces1.jpg' %}" alt="img01"/>
+							<figcaption>
+								<div class="figcaption-border">
+									<h2><span>Retomando Raíces</span></h2>
+									<p>Circuito urbano de iglesias, plazas, monumentos y murales</p>
+									<a href="{% url 'raices' %}">View more</a>
+									<div class="figure-overlay"></div>
+								</div>
+							</figcaption>											
+						</figure>
+						<figure class="single-item-effect big las-vegas">
+							<img src="{% static 'images/puerta_loja.jpg' %}" alt="img01"/>
+							<figcaption>
+								<div class="figcaption-border">
+									<h2><span>LojaTur</span></h2>
+									<p>El que no conoce Loja no conoce mi país</p>
+									<a href="{% url 'lojatur' %}">View more</a>
+									<div class="figure-overlay"></div>
+								</div>
+							</figcaption>												
+						</figure>
+					</div>
+				</div>
+            </article>
         </div>
     </div>
-</section>
 
+    
+    <script src="{% static 'js/modernizr.custom.js' %}"></script>
+    <script src="{% static 'js/jquery.min.js' %}"></script>
+    <script src="{% static 'js/sidebarEffects.js' %}"></script>
+    <script src="{% static 'js/classie.js' %}"></script>
+    <script src="{% static 'js/custom.js' %}"></script>
+    <script src="{% static 'js/transition.js' %}"></script>
+    <script src="{% static 'js/jquery.infinitescroll.js' %}"></script>
+    <script src="{% static 'js/jquery.mb.YTPlayer.js' %}"></script>
+    <script src="{% static 'js/youtube-video.js' %}"></script>
+    <script src="{% static 'js/jquery.ketchup.all.min.js' %}"></script>
 {% endblock content %}

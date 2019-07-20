@@ -35,3 +35,7 @@ def Identiarte(request):
 @login_required
 def Raices(request):
     return render(request, 'raice/ruta_raices.html')
+
+@login_required
+def Lojatur(request):
+    return render(request, 'lojatur/lojatur.html')

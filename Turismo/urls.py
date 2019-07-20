@@ -31,6 +31,7 @@ urlpatterns = [
     path('Lojanisima', views.Lojanisima, name='lojanisima'),
     path('Identiarte', views.Identiarte, name='identiarte'),
     path('Raices', views.Raices, name='raices'),
+    path('Lojatur', views.Lojatur, name='lojatur'),
 
     
     
