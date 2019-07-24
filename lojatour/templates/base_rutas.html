@@ -19,12 +19,39 @@
     <link rel="stylesheet" href="{% static 'assets/animatecss/animate.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/socicon/css/styles.css' %}">
     <link rel="stylesheet" href="{% static 'assets/theme/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.css' %}">
+    <link rel="stylesheet" href="{% static 'fonts/font-awesome-4.7.0/css/font-awesome.min.css' %}">
     <link rel="stylesheet" href="{% static 'assets/mobirise/css/mbr-additional.css' %}" type="text/css">
     {% endblock stylesheets %}
 </head>
 
 <body>
     {% load staticfiles %}
+    <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+          
+            gtag('config', 'UA-23581568-13');
+          </script>
+          <!-- WhatsHelp.io widget -->
+          <!-- <script type="text/javascript">
+             (function () {
+                 var options = {
+                     facebook: "115593121792395", // Facebook page ID
+                     whatsapp: "+593 96 801 5134", // WhatsApp number
+                    //  call_to_action: "Contáctate con Nosotros!!", // Call to action
+                     button_color: "#E74339", // Color of button
+                     position: "right", // Position may be 'right' or 'left'
+                     order: "facebook,whatsapp", // Order of buttons
+                 };
+                 var proto = document.location.protocol, host = "whatshelp.io", url = proto + "//static." + host;
+                 var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = url + '/widget-send-button/js/init.js';
+                 s.onload = function () { WhWidgetSendButton.init(host, proto, options); };
+                 var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(s, x);
+             })();
+          </script> -->
+          <!-- /WhatsHelp.io widget -->
     <section class="menu cid-reGXlyXMqT" once="menu" id="menu1-j">
 
 
@@ -53,9 +80,9 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav nav-dropdown nav-right" data-app-modern-menu="true">
                     <li class="nav-item"><a class="nav-link link text-white display-4"
-                            href="{% url 'Menú' %}">Menú</a></li>
+                            href="{% url 'Menú' %}"><i class="fa fa-home" style="font-size:36px"></i></a></li>
                     <li class="nav-item"><a class="nav-link link text-white display-4"
-                            href="{% url 'logout' %}">Salir</a></li>
+                            href="{% url 'logout' %}"><i class="fa fa-power-off" style="font-size: 36px;"></i></a></li>
                 </ul>
 
             </div>
@@ -68,7 +95,41 @@
         {% endblock content %}
     </main>
     {% endblock body %}
+    <!-- <section class="cid-rvWY6HIlcn" id="social-buttons3-r">
     
+    
+
+    
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="col-md-8 align-center">
+                    <h2 class="pb-3 mbr-section-title mbr-fonts-style display-2">
+                       
+                    </h2>
+                    <div>
+                        <div class="mbr-social-likes">
+                            <span class="btn btn-social socicon-bg-facebook facebook mx-2" title="Share link on Facebook">
+                                <i class="socicon socicon-facebook"></i>
+                            </span>
+                            <span class="btn btn-social twitter socicon-bg-twitter mx-2" title="Share link on Twitter">
+                                <i class="socicon socicon-twitter"></i>
+                            </span>
+                            <span class="btn btn-social plusone socicon-bg-googleplus mx-2" title="Share link on Google+">
+                                <i class="socicon socicon-googleplus"></i>
+                            </span>
+                            
+                            
+                            <span class="btn btn-social pinterest socicon-bg-pinterest mx-2" title="Share link on Pinterest">
+                                <i class="socicon socicon-pinterest"></i>
+                            </span>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
     <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i
                 class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
     <input name="animation" type="hidden">

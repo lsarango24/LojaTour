@@ -482,7 +482,7 @@ body {
   color: #b1a374 !important;
 }
 .text-white {
-  color: #ffffff !important;
+  color: #a34e82 !important;
 }
 .text-black {
   color: #000000 !important;
@@ -2228,7 +2228,7 @@ body {
 }
 .cid-reGXlyXMqT .navbar {
   padding: .5rem 0;
-  background: #465052;
+  background: #46505200;
   transition: none;
   min-height: 77px;
 }
